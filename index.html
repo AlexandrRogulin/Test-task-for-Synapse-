@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Краткое описание страницы  -->
+    <meta name="description" content=" " />
+    <!-- Ключевые слова страницы  -->
+    <meta name="keywords" content=" " />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="flickity.css" />
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="js/modernizr.js"></script>
+    <title>Верстка. Тестовое задание</title>
+</head>
+
+<body>
+    <div class="grid_container">
+        <!-- Меню -->
+        <div class="menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+            <ul class="menu__box">
+                <li class="menu__item"><img src="img/icons/logotip_vp_2_15250.png" alt=""></li>
+                <li class="menu_label menu__item">
+                    <h3>Качество,</h3>
+                    <h3>проверенное</h3>
+                    <h3>поколениями</h3>
+
+                </li>
+                <li>
+                    <div class="menu_navigation menu__item">
+                        <h3>О компании</h3>
+                        <h3>Проекты</h3>
+                        <h3>Наши работы</h3>
+                        <h3>Отзывы</h3>
+                        <h3>Новости</h3>
+                        <h3>Контакты</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu_footer menu__item">
+                        <div class="phone_number menu__item">
+                            <h3>800 2000 679</h3>
+                        </div>
+                        <div class="job_info menu__item">
+                            <p>пн - пт с 9:00 до 18:00</p>
+                        </div>
+                        <div class="booking_call menu__item">
+                            <h3>Обратный звонок</h3>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Краткое описание -->
+        <div class="aside">
+            <div class="aside_container">
+                <p>Поделиться проектом</p>
+                <div class="social_commynity">
+                    <img src="img/icons/sloy_99_kopirovat_15621.png" alt="" />
+                    <img src="img/icons/odnoklassniki_icon_kopirovat_15622.png" alt="" />
+                    <img src="img/icons/1414386628_facebook_circle_color_512_kopirovat_15623.png" alt="" />
+                    <img src="img/icons/sloy_133_15624.png" alt="" />
+                </div>
+                <div class="project_params">
+                    <img src="img/icons/params1.png" alt="">
+                    <div class="params_label">Размеры:</div>
+                    <div class="params_value">12,0 м х 9,5 м</div>
+                </div>
+                <br>
+                <div class="project_params">
+                    <img src="img/icons/params2.png" alt="">
+                    <div class="params_label">Общая площадь:</div>
+                    <div class="params_value">153 м2</div>
+                </div>
+                <br>
+                <div class="project_params">
+                    <img src="img/icons/params3.png" alt="">
+                    <div class="params_label">Этажность:</div>
+                    <div class="params_value">2 этажа</div>
+                </div>
+                <div class="project_params">
+                    <img src="img/icons/params4.png" alt="">
+                    <div class="params_label">Диаметр бревна:</div>
+                    <div class="params_value">153 м2</div>
+                </div>
+                <div class="project_price_label">Цена за домокомплект:</div>
+                <div class="project_price_value">1 200 000 руб.</div>
+                <input type="button" class="project_preview_button" value="Заказать смету" />
+                <div class="project_description">
+                    <p>
+                        Проект «На озере» - чудесное решение для южных широт нашей страны. Большие площади остекления откроют чудесные виды на живописные пляжи, а террасы создадут непередаваемую атмосферу для ужинов и завтраков.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Header + галерея -->
+        <div class="project_top">
+            <div class="project_top_container">
+                <div class="header">
+                    <div class="header_navigation">
+                        <p>Главная</p>
+                        <img src="img/icons/sloy_128_15496.png" alt="">
+                        <p>Проекты</p>
+                    </div>
+
+                    <div class="header_name">
+                        <h1>Проект дома «На озере»</h1>
+                    </div>
+                </div>
+                <div class="flickity_container">
+                    <div class="carousel carousel-main" data-flickity='{ "cellAlign": "left", "contain": true }' data-flickity='{ "fullscreen": true, "lazyLoad": 1 }'>
+                        <div class="carousel-cell"><img src="img/houses/pryamougolnik_19_kopirovat_5_15274.png" alt=""></div>
+                        <div class="carousel-cell"><img src="img/houses/fasad3n_15632.png" alt=""></div>
+                        <div class="carousel-cell"><img src="img/houses/fasad4n_15633.png" alt=""></div>
+                        <div class="carousel-cell"><img src="img/houses/fasad11n_15634.png" alt=""></div>
+                    </div>
+                    <div class="carousel carousel-nav" data-flickity='{ "asNavFor": ".carousel-main", "contain": true }'>
+                        <div class="carousel-cell"><img src="img/houses/pryamougolnik_19_kopirovat_5_15274.png" alt=""></div>
+                        <div class="carousel-cell"><img src="img/houses/fasad3n_15632.png" alt=""></div>
+                        <div class="carousel-cell"><img src="img/houses/fasad4n_15633.png" alt=""></div>
+                        <div class="carousel-cell"><img src="img/houses/fasad11n_15634.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Планировка дома -->
+        <div class="project_plan">
+            <div class="project_plan_container">
+                <div class="floor1">
+                    <p>1 этаж</p><img src="img/houses/etazh1n_15643.png" alt="">
+                </div>
+                <div class="floor2">
+                    <p>2 этаж</p><img src="img/houses/etazhn2_15644.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Дополнительная информация о проекте -->
+        <div class="project_info">
+            <div class="info_container">
+                <div class="project_package">
+                    <div class="project_base_table">
+                        <table>
+                            <tr>
+                                <th><img src="img/icons/ик3.png" alt="">
+                                    <h3>Комплектация "Базовая" (домокомплект)
+                                    </h3>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>Рубленый стеновой комплект сруб в чашу</td>
+                            </tr>
+                            <tr>
+                                <td>Баки половые брус 100 на 200</td>
+                            </tr>
+                            <tr>
+                                <td>Пере... межэтажный брус 150 на 200</td>
+                            </tr>
+                            <tr>
+                                <td>Межвенцовый утеплитель (...)</td>
+                            </tr>
+                            <tr>
+                                <td>Стропила</td>
+                            </tr>
+                            <tr>
+                                <td>Обрешетка</td>
+                            </tr>
+                            <tr>
+                                <td>Нигеля березовые</td>
+                            </tr>
+                            <tr>
+                                <td>Рубероид, ... ... кровля</td>
+                            </tr>
+                            <tr>
+                                <td>Метизы</td>
+                            </tr>
+                            <tr id="project_base_price">
+                                <td>
+                                    1 200 000 руб.
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="project_base_table">
+                        <table>
+                            <tr>
+                                <th><img src="img/icons/ик3.png" alt="">
+                                    <h3>Комплектация "Оптимальная" (домокомплект + монтаж)
+                                    </h3>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>Укладка межвенцового утеплителя</td>
+                            </tr>
+                            <tr>
+                                <td>Устройство стропильной системы</td>
+                            </tr>
+                            <tr>
+                                <td>Пере... межэтажный брус 150 на 200</td>
+                            </tr>
+                            <tr>
+                                <td>Межвенцовый утеплитель (...)</td>
+                            </tr>
+                            <tr>
+                                <td>Стропила</td>
+                            </tr>
+                            <tr>
+                                <td>Обрешетка</td>
+                            </tr>
+                            <tr>
+                                <td>Нигеля березовые</td>
+                            </tr>
+                            <tr>
+                                <td>Сборка стенового комплекта</td>
+                            </tr>
+                            <tr>
+                                <td>Монтаж балок пола</td>
+                            </tr>
+                            <tr>
+                                <td>Монтаж межэтажный балок</td>
+                            </tr>
+                            <tr>
+                                <td>Укладка гидро...</td>
+                            </tr>
+                            <tr id="project_optimal_price">
+                                <td>
+                                    1 690 000 руб.
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+                <!-- Доставка -->
+                <div class="project_main_delivery">
+                    <div class="project_delivery_label">
+                        <h3>Доставка</h3>
+                    </div>
+                    <p class="project_delivery_text">
+                        Чтобы доставить домокоплект по данному проекту<br /> необходимо <b>4 единицы техники</b>
+                    </p>
+                    <div class="delivery_images">
+                        <img src="img/icons/sloy_136_15720.png" alt="" />
+                        <img src="img/icons/sloy_136_15720.png" alt="" />
+                        <img src="img/icons/sloy_136_15720.png" alt="" />
+                        <img src="img/icons/sloy_136_15720.png" alt="" />
+                    </div>
+                    <p class="project_delivery_text">
+                        Стоимость доставки - <b>80 рублей</b> за один километр
+                    </p>
+                </div>
+                <!-- Описание проекта -->
+                <div class="project_main_description">
+                    <div class="project_description_label">
+                        <h3>Описание проекта</h3>
+                        <div class="project_text_description">
+                            <p>Проект «Волна» - чудесное решение для южных широт нашей страны. Большие площади остекления откроют чудесные виды на живописные пляжи, а террасы создадут непередаваемую атмосферу для ужинов и завтраков.</p>
+                        </div>
+                        <div class="container">
+                            <figure>
+                                <div id="compare"></div>
+                            </figure>
+                            <input oninput="beforeAfter()" onchange="beforeAfter()" type="range" min="0" max="100" value="50" id="slider" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Примеры работ -->
+                <div class="project_main_examples">
+                    <div class="project_examples_label">
+                        <h3>По даному проекту были построены дома</h3>
+                    </div>
+                    <div class="grid_examples_gallery">
+                        <div id="item1"><img src="img/houses/pryamougolnik_59_15749.png" alt=""></div>
+                        <div id="item2"><img src="img/houses/pryamougolnik_59_kopirovat_15752.png" alt=""></div>
+                        <div id="item3" class="span-col-2 span-row-2 ">
+                            <p>Вологодская область, село Устье-Кубенское</p>
+                        </div>
+                        <div id="item4"><img src="img/РЕСО-Л.-Отзыв-по-внедрению-ЗУП-20100818.png" alt=" ">
+                            <div class="item_pdf">
+                                <p>PDF</p>
+                            </div>
+                        </div>
+                        <div id="item5"><img src="img/РЕСО-Л.-Отзыв-по-внедрению-ЗУП-20100818_kопировать.png" alt=" ">
+                            <div class="item_pdf">
+                                <p>PDF</p>
+                            </div>
+                        </div>
+                        <div id="item6"><img src="img/houses/pryamougolnik_60_15766.png" alt=""></div>
+                        <div id="item7"><img src="img/houses/pryamougolnik_60_kopirovat_3_15770.png" alt=""></div>
+                        <div id="item8"> <img src="img/houses/pryamougolnik_60_kopirovat_4_15771.png" alt=""></div>
+                        <div id="item9"><img src="img/houses/pryamougolnik_60_kopirovat_5_15772.png" alt=""></div>
+                        <div id="item10"><img src="img/houses/pryamougolnik_60_kopirovat_15775.png" alt=""></div>
+                        <div id="item11"><img src="img/houses/pryamougolnik_60_kopirovat_6_15776.png" alt=""></div>
+                        <div id="item12"><img src="img/houses/pryamougolnik_60_kopirovat_6_15777.png" alt=""></div>
+                        <div id="item13"><img src="img/houses/pryamougolnik_60_kopirovat_6_15778.png" alt=""></div>
+                    </div>
+                </div>
+                <!-- Footer -->
+                <div class="project_main_footer">
+                    <div class="main_footer_container">
+                        <div class="main_footer_produce_nav">
+                            <b>Производство</b>
+                            <p>Рубленное бревно</p>
+                            <p>Оцилиндрованное бревно</p>
+                            <p>Дома из бруса</p>
+                            <p>Дома из оцилиндрованного бревна</p>
+                            <p>Дома из клееного бруса</p>
+                        </div>
+                        <div class="main_footer_project_nav">
+                            <b>Проект</b>
+                            <p>Дома</p>
+                            <p>Бани</p>
+                            <p>Малые формы</p>
+                        </div>
+                        <div class="main_footer_adr">
+                            <div class="main_footer_adr_icon">
+                                <img src="img/icons/icons8_geozona_100_15516.png" alt="">
+                            </div>
+                            <div class="main_footer_adr_text">
+                                <b>Производство:</b>
+                                <p>162220 Вологодская область,</p>
+                                <p style="color: #006022">Сямжа с. ул. Парковая д. 6</p>
+                                <br />
+                                <b>Офис:</b>
+                                <p>160000 Вологодская область,</p>
+                                <p style="color: #006022">г. Вологда . ул. Мира 8</p>
+                            </div>
+                        </div>
+                        <div class="main_footer_contacts">
+                            <div class="main_footer_contacts_icon">
+                                <img src="img/icons/icons8_polozhit_trubku_100_(1)_15518.png" alt="">
+                            </div>
+                            <div class="main_footer_contacts_text">
+                                <b>8 800 2000-679</b>
+                                <p>Ежедневно с 08:00 до 23:00</p>
+                                <a href="mailto:srub@nord-srub.ru">
+                                    <p style="color: #006022">srub@nord-srub.ru</p>
+                                </a>
+                                <br />
+                                <div class="main_footer_contacts_img">
+                                    <a href="https://vk.com/" target="blank"><img src="img/icons/sloy_130_15511.png" alt="" /></a>
+                                    <a href="https://www.instagram.com/" target="blank"><img src="img/icons/sloy_129_15510.png" alt="" /></a>
+                                    <a href="https://ru-ru.facebook.com/" target="blank"><img src="img/icons/sloy_131_15512.png" alt="" />
+                                        <a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_footer_bottom">
+                        <div class="footer_copyright">
+                            <p>
+                                © СК "Вологодский плотник" © 2010 — 2017 <br />Все права защищены.
+                            </p>
+                        </div>
+                        <div class="footer_synapse">
+                            <a href="https://www.synapse-studio.ru/" target="blank">
+                                <table>
+                                    <tr>
+                                        <td><img src="img/icons/group_16_6111.png" alt="" /></td>
+                                        <td> &#8212;</td>
+                                        <td class="footer_synapse_info">Создание сайта</td>
+                                    </tr>
+                                </table>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="function.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="/path/to/flickity.pkgd.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1332 @@
+// файл обнуляющих стилей
+@import 'null_style.scss';
+// Шрифты
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@font-face {
+    font-family: 'OfficinaSerifC-Bold';
+    src: url('../fonts/OfficinaSerifC-Bold.eot');
+    src: local('☺'), url('../fonts/OfficinaSerifC-Bold.woff') format('woff'), url('../fonts/OfficinaSerifC-Bold.ttf') format('truetype'), url('../fonts/OfficinaSerifC-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OfficinaSerifC';
+    src: url('../fonts/OfficinaSerifC-Book.eot');
+    src: local('☺'), url('../fonts/OfficinaSerifC-Book.woff') format('woff'), url('../fonts/OfficinaSerifC-Book.ttf') format('truetype'), url('../fonts/OfficinaSerifC-Book.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial - Italic MT';
+    src: url('../fonts/ariali.eot');
+    src: local('☺'), url('../fonts/ariali.woff') format('woff'), url('../fonts/ariali.ttf') format('truetype'), url('../fonts/ariali.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    width: 658px;
+    height: 53px;
+    color: #503314;
+    font-family: "OfficinaSerifC";
+    font-size: 60px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 60px;
+    text-align: left;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+h3 {
+    color: #ffffff;
+    font-family: "OfficinaSerifC";
+    font-size: 15px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    color: #1c1c1c;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 23.94px;
+    text-align: left;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 15% 21% 2.5fr 1.5fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+}
+
+// Меню
+.menu {
+    grid-row: span 3;
+    border: 1px solid #000;
+    display: flex;
+    background: url('../img/background/pryamougolnik_34_15247.png') repeat-y;
+    background-size: contain;
+}
+
+#menu__toggle {
+    display: none;
+}
+
+.menu__box {
+    height: fit-content;
+    margin: 30px auto;
+    max-width: 100%;
+    position: sticky;
+    top: 30px;
+}
+
+.menu__box img {
+    width: 100%;
+    height: auto;
+}
+
+.menu_label {
+    margin-top: 26px;
+}
+
+.menu_navigation {
+    margin-top: 104px;
+}
+
+.menu_navigation h3 {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 35.2px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.menu_navigation h3:hover {
+    text-decoration: underline;
+}
+
+.menu_footer {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.phone_number {
+    margin-bottom: 13px;
+}
+
+.phone_number h3 {
+    color: #fefefe;
+    font-size: 20px;
+    line-height: 18.19px;
+    text-align: justify;
+}
+
+.job_info {
+    margin-bottom: 50px;
+}
+
+.job_info p {
+    color: #fefefe;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 13px;
+    text-align: left;
+}
+
+.booking_call h3 {
+    color: #fefefe;
+    font-size: 16px;
+    line-height: 18.19px;
+    text-align: left;
+}
+
+.aside {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    display: flex;
+    background-color: #f7f7f7;
+}
+
+//Краткое описание
+.aside_container {
+    margin: 30px 1vw;
+    width: 100%;
+}
+
+.aside_container p {
+    font-size: 18px;
+}
+
+.social_commynity {
+    margin: 17px 0 70px 0;
+}
+
+.project_params {
+    margin-top: 14px;
+}
+
+.project_params img {
+    float: left;
+    margin-right: 27px;
+}
+
+.params_label {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+}
+
+.params_value {
+    color: #343434;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+}
+
+.project_price_label {
+    color: #343434;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.project_price_value {
+    color: #006022;
+    font-family: 'OfficinaSerifC';
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+}
+
+.project_preview_button {
+    background: url('../img/background/pryamougolnik_53_15661.png');
+    color: #ffffff;
+    font-family: 'OfficinaSerifC';
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    padding: 22px 53px 23px 46px;
+    margin: 36px 0px 63px 0px;
+}
+
+.project_description {
+    width: fit-content;
+}
+
+.project_description p {
+    color: #1c1c1c;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    line-height: normal;
+}
+
+//Header + галерея
+.project_top {
+    display: flex;
+    margin-left: 28px;
+    margin-top: 30px;
+}
+
+.header_navigation {
+    display: flex;
+}
+
+.header_navigation img {
+    width: auto;
+    height: 100%;
+    text-align: center;
+    margin: 0 10px;
+    align-self: center;
+}
+
+.header_navigation p {
+    color: #1c1c1c;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 29.98px;
+    text-align: left;
+}
+
+.project_top_container {
+    margin-right: 15px;
+    width: 100%;
+}
+
+.header_name {
+    margin-bottom: 15px;
+}
+
+//Flickity Slider
+.carousel {
+    background: #FAFAFA;
+    margin-bottom: 40px;
+}
+
+.carousel-main {
+    width: 100%;
+}
+
+.carousel-main img {
+    width: auto;
+    height: 100%;
+}
+
+.carousel-nav img {
+    width: auto;
+    height: 100%;
+}
+
+.carousel-cell {
+    width: 100%;
+    height: 200px;
+    margin-right: 10px;
+    background: #fff;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
+
+
+/* cell number */
+
+.carousel-cell:before {
+    display: none;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+.carousel-nav .carousel-cell {
+    height: 80px;
+    width: 100px;
+}
+
+.carousel-nav .carousel-cell img {
+    height: 80px;
+    width: 100px;
+}
+
+.carousel-nav .carousel-cell:before {
+    font-size: 50px;
+    line-height: 80px;
+}
+
+.carousel-nav .carousel-cell.is-nav-selected {
+    background: #ED2;
+}
+
+.carousel-cell-image {
+    display: block;
+    max-height: 100%;
+}
+
+.carousel.is-fullscreen .carousel-cell-image {
+    max-width: 100%;
+}
+
+.flickity-button {
+    display: none;
+}
+
+.carousel-cell {
+    width: 100%;
+    height: 300px;
+    margin-right: 10px;
+    /* center images in cells with flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel.is-fullscreen .carousel-cell {
+    height: 100%;
+}
+
+.carousel-cell-image {
+    display: block;
+    max-height: 100%;
+}
+
+.carousel.is-fullscreen .carousel-cell-image {
+    max-width: 100%;
+}
+
+.flickity-page-dots {
+    display: none;
+}
+
+//Планировка дома
+.project_plan {
+    display: flex;
+}
+
+.project_plan_container {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    text-align: right;
+    margin-top: 100px;
+    margin-right: 38px;
+}
+
+.project_plan_container img {
+    width: 100%;
+    height: auto;
+    text-align: right;
+}
+
+.project_info {
+    grid-column: 3/5;
+    display: flex;
+    width: 100%;
+}
+
+.info_container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 38px 20px 28px;
+}
+
+.project_package {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.project_base_table {
+    width: 50%;
+}
+
+.project_base_table th {
+    padding: 26px 0 26px 38px;
+    background-color: #f2f2f2;
+}
+
+.project_base_table table img {
+    float: left;
+}
+
+.project_base_table table h3 {
+    color: #1c1c1c;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: none;
+}
+
+.project_base_table table td {
+    color: #343434;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 2;
+    text-align: left;
+}
+
+.project_base_table table tr:nth-child(odd) {
+    background: #f7f7f7;
+}
+
+.project_base_table table tr:nth-child(even) {
+    background: #ffffff;
+}
+
+#project_base_price td {
+    color: #ffffff;
+    font-family: "OfficinaSerifC";
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    background-image: url("../img/background/pryamougolnik_54_kopirovat_2_15685.png");
+    padding: 25px 0;
+}
+
+#project_optimal_price td {
+    color: #ffffff;
+    font-family: "OfficinaSerifC";
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    background-image: url("../img/background/pryamougolnik_54_kopirovat_4_15708.png");
+    padding: 25px 0;
+}
+
+.package_price {
+    width: 100%;
+    background-image: url('../img/background/pryamougolnik_54_kopirovat_2_15685.png');
+    text-align: center;
+    color: #ffffff;
+    font-family: 'OfficinaSerifC';
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 2.5;
+}
+
+
+/* Style for "Доставка" */
+
+.project_main_delivery {
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 100%;
+    margin-top: 47px;
+}
+
+.project_delivery_label h3 {
+    color: #1c1c1c;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: none;
+    padding: 42px 0px 23px 0px;
+}
+
+.project_delivery_text {
+    color: #1c1c1c;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    line-height: 23.94px;
+    padding: 36px 0px;
+}
+
+.delivery_images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.delivery_images img {
+    padding: 10px 20px;
+}
+
+
+/* Style for "Описание проекта" */
+
+.project_main_description {
+    margin: 54px 0px;
+}
+
+.project_description_label h3 {
+    font-size: 30px;
+    text-align: center;
+    color: #1c1c1c;
+    text-transform: none;
+}
+
+.project_text_description {
+    margin: 25px 0px 47px 0px;
+}
+
+.project_text_description p {
+    color: #1c1c1c;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23.94px;
+    text-align: left;
+}
+
+// Style for Slider Delivery
+.container {
+    height: 35.5vw;
+    margin: 1vw auto;
+    max-height: 750px;
+    max-width: 1000px;
+    overflow: hidden;
+    width: 48vw;
+}
+
+.container figure {
+    background-image: url('../img/houses/pryamougolnik_59_kopirovat_15752.png');
+    background-size: cover;
+    font-size: 0;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+
+#compare {
+    background-image: url('../img/houses/pryamougolnik_19_kopirovat_5_15274.png');
+    background-size: cover;
+    bottom: 0;
+    border-right: 5px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 10px 0 15px -13px #000;
+    height: 100%;
+    max-width: 98.6%;
+    min-width: 0.6%;
+    overflow: visible;
+    position: absolute;
+    width: 50%;
+    animation: first 2s 1 normal ease-in-out 0.1s;
+    -webkit-animation: first 2s 1 normal ease-in-out 0.1s;
+}
+
+input#slider {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    background: transparent;
+    cursor: col-resize;
+    height: 100vw;
+    left: 0;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    position: relative;
+    top: -100vw;
+    width: 100%;
+}
+
+input#slider::-moz-range-track {
+    background: transparent;
+}
+
+input#slider::-ms-track {
+    border: none;
+    background-color: transparent;
+    height: 100vw;
+    left: 0;
+    outline: none;
+    position: relative;
+    top: -100vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: col-resize;
+    color: transparent;
+}
+
+input#slider::-ms-fill-lower {
+    background-color: transparent;
+}
+
+input#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 100vw;
+    width: 0.5%;
+    opacity: 0;
+}
+
+input#slider::-moz-range-thumb {
+    -moz-appearance: none;
+    height: 100vw;
+    width: 0.5%;
+    opacity: 0;
+}
+
+input#slider::-ms-thumb {
+    height: 100vw;
+    width: 0.5%;
+    opacity: 0;
+}
+
+input#slider::-ms-tooltip {
+    display: none;
+}
+
+#compare::before {
+    background: url('../img/icons/Эллипс_1.png') no-repeat scroll 0 center transparent;
+    background-size: contain;
+    content: " ";
+    float: right;
+    height: 100%;
+    margin-right: -34px;
+    position: relative;
+    top: 0;
+    width: 64px;
+}
+
+@keyframes first {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 80%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+@-webkit-keyframes first {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 80%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+
+/* Style for "По  даному проекту были построены дома" */
+
+.project_main_examples {
+    width: 100%;
+}
+
+.project_examples_label h3 {
+    color: #1c1c1c;
+    font-size: 30px;
+    text-align: center;
+    text-transform: none;
+    padding-bottom: 35px;
+}
+
+.grid_examples_gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+}
+
+.grid_examples_gallery img {
+    width: 100%;
+}
+
+.span-col-2 {
+    grid-column: span 2 / auto;
+}
+
+.span-row-2 {
+    grid-row: span 2 / auto;
+}
+
+#item4 {
+    width: 50%;
+}
+
+#item4:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#item5 {
+    width: 50%;
+}
+
+#item5:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#item3 {
+    background: url('../img/icons/icons8-видео-плейлист-100.png') 50% no-repeat, url('../img/houses/pryamougolnik_59_kopirovat_2_15757.png') 50%/cover no-repeat;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#item3 p {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    margin-top: 55%;
+}
+
+#item3:hover {
+    opacity: 0.8;
+}
+
+#item4 {
+    display: flex;
+}
+
+#item4 img {
+    height: 100%;
+    width: auto;
+}
+
+#item5 {
+    display: flex;
+}
+
+#item5 img {
+    height: 100%;
+    width: auto;
+}
+
+#item4 .item_pdf {
+    background-color: #006022;
+    padding: 1px 6px;
+    height: fit-content;
+}
+
+#item5 .item_pdf {
+    background-color: #006022;
+    padding: 1px 6px;
+    height: fit-content;
+}
+
+.item_pdf p {
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.project_main_footer {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.main_footer_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    color: #494949;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 29.92px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.main_footer_adr {
+    display: inline-flex;
+}
+
+.main_footer_adr_icon {
+    margin-right: 15px;
+}
+
+.main_footer_adr_text {
+    line-height: 21.94px;
+    padding-top: 4px;
+}
+
+.main_footer_contacts {
+    display: inline-flex;
+}
+
+.main_footer_contacts img {
+    padding-right: 15px;
+}
+
+.main_footer_bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer_copyright {
+    color: #494949;
+    font-family: 'PT Sans';
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 14px;
+}
+
+table,
+tr,
+td {
+    vertical-align: bottom;
+    padding: 1px;
+}
+
+.footer_synapse_info {
+    color: #494949;
+    font-family: 'Arial - Italic MT';
+    font-size: 12px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: normal;
+    text-align: left;
+    text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+    .grid_container {
+        display: grid;
+        grid-template-columns: 15% 64% 21%;
+        grid-template-rows: auto auto 1fr;
+        grid-auto-flow: row dense;
+        height: 100vh;
+    }
+    .menu {
+        grid-row: span 3;
+    }
+    .aside {
+        grid-column: 3/4;
+        grid-row: span 2;
+        background-color: #fff;
+    }
+    .project_info {
+        grid-column: 2/4;
+    }
+    h1 {
+        font-size: calc(30px + 30 * ((100vw - 320px) / (1200 - 320)));
+    }
+    h2 {
+        font-size: calc(22px + 8 * ((100vw - 320px) / (1200 - 320)));
+    }
+    .aside_container p {
+        font-size: 10px;
+        font-family: Roboto;
+    }
+    .social_commynity img {
+        width: 20px;
+        height: auto;
+    }
+    .params_label {
+        font-size: 14px;
+    }
+    .params_value {
+        font-size: 14px;
+    }
+    .project_params img {
+        width: 25px;
+        height: auto;
+    }
+    .project_preview_button {
+        background: url('../img/background/pryamougolnik_53_15661.png');
+        color: #ffffff;
+        font-family: 'OfficinaSerifC';
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+        padding: 11px 25px 11px 23px;
+        margin: 18px 0px 30px 0px;
+    }
+    .project_price_value {
+        font-size: calc(22px + 8 * ((100vw - 320px) / (1200 - 320)));
+    }
+    .project_plan {
+        height: fit-content;
+        justify-content: center;
+    }
+    .project_plan_container {
+        justify-content: center;
+        margin: 0px;
+        float: inherit;
+        text-align: center;
+    }
+    .project_plan_container img {
+        width: 90%;
+        height: auto;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+    .span-col-2 {
+        grid-column: span 3 / auto;
+    }
+    .span-row-2 {
+        grid-row: span 2 / auto;
+    }
+    #item1 {
+        order: 1;
+    }
+    #item2 {
+        order: 4;
+    }
+    #item3 {
+        order: 2;
+    }
+    #item4 {
+        order: 3;
+        width: 75%;
+    }
+    #item5 {
+        display: none;
+    }
+    #item6 {
+        display: none;
+    }
+    #item7 {
+        order: 4;
+    }
+    #item8 {
+        order: 5;
+    }
+    #item9 {
+        order: 6;
+    }
+    #item10 {
+        order: 7;
+    }
+    #item11 {
+        order: 8;
+    }
+    #item12 {
+        order: 9;
+    }
+    #item13 {
+        order: 10;
+    }
+}
+
+@media (max-width: 1024px) {
+    .grid_container {
+        display: grid;
+        grid-template-columns: 88px 64% 21%;
+        grid-template-rows: 100vh auto 1fr;
+        grid-auto-flow: row dense;
+        height: 100vh;
+    }
+    #menu__toggle {
+        opacity: 0;
+    }
+    #menu__toggle:checked~.menu__btn>span {
+        transform: rotate(45deg);
+    }
+    #menu__toggle:checked~.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu__toggle:checked~.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked~.menu__box {
+        visibility: visible;
+        left: 0;
+    }
+    .menu__btn {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 50vh;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 3;
+    }
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        transition-duration: .25s;
+    }
+    .menu__btn>span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn>span::after {
+        content: '';
+        top: 8px;
+    }
+    .menu__box {
+        position: absolute;
+        visibility: hidden;
+        height: fit-content;
+        top: 0;
+        left: -100%;
+        margin: 0;
+        list-style: none;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        transition-duration: .25s;
+        background: url('../img/background/pryamougolnik_34_15247.png') repeat-y;
+        z-index: 1;
+    }
+    .menu__item {
+        display: block;
+        padding: 12px 24px;
+        transition-duration: .25s;
+    }
+    .menu__item:hover {
+        background: #CFD8DC;
+    }
+    .flickity_container {
+        position: relative;
+        z-index: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .grid_container {
+        display: grid;
+        //display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: none;
+        width: 100vw;
+        height: fit-content;
+    }
+    .menu {
+        // position: absolute;
+        // top: -9999px;
+        // left: -9999px;
+        grid-row: 1;
+        // display: none;
+        height: 50px;
+        order: 1;
+        background: url('../img/background/pryamougolnik_34_15247.png') repeat-x;
+    }
+    #menu__toggle {
+        opacity: 0;
+    }
+    #menu__toggle:checked~.menu__btn>span {
+        transform: rotate(45deg);
+    }
+    #menu__toggle:checked~.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu__toggle:checked~.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked~.menu__box {
+        visibility: visible;
+        left: 0;
+    }
+    .menu__btn {
+        left: 280px;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 3;
+        background: url('../img/background/pryamougolnik_34_15247.png') repeat-x;
+    }
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        transition-duration: .25s;
+    }
+    .menu__btn>span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn>span::after {
+        content: '';
+        top: 8px;
+    }
+    .menu__box {
+        display: inline;
+        visibility: hidden;
+        height: fit-content;
+        width: 100vh;
+        top: 0;
+        left: -20%;
+        margin: 0;
+        list-style: none;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        transition-duration: .25s;
+        background: url('../img/background/pryamougolnik_34_15247.png') repeat-x;
+    }
+    .menu__box img {
+        display: none;
+    }
+    .menu_label h3 {
+        display: none;
+    }
+    .menu_navigation {
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        width: fit-content;
+    }
+    .menu_footer {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    .menu__item {
+        display: block;
+        padding: 12px 24px;
+        transition-duration: .25s;
+    }
+    .menu__item:hover {
+        background: #CFD8DC;
+    }
+    .aside {
+        grid-row: 4;
+        grid-column: 1;
+        width: 320px;
+    }
+    .project_top {
+        display: inline;
+        grid-row: 2;
+        width: 100%;
+        margin: 0;
+    }
+    .header_name h1 {
+        max-width: 320px;
+    }
+    .project_plan {
+        grid-row: 3;
+        width: 320px;
+    }
+    .project_info {
+        grid-row: 5;
+        grid-column: 1;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .info_container {
+        margin: 0;
+        padding: 5px;
+        width: 100%;
+    }
+    .project_package {
+        flex-direction: column;
+    }
+    .project_base_table {
+        width: 100%;
+        padding: 0;
+    }
+    .grid_examples_gallery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+    .span-col-2 {
+        grid-column: span 1 / auto;
+    }
+    .span-row-2 {
+        grid-row: span 1 / auto;
+    }
+    #item3 {
+        order: 1;
+        width: 100vw;
+        height: auto;
+    }
+    #item1 {
+        order: 2;
+    }
+    #item2 {
+        order: 3;
+    }
+    #item4 {
+        display: none;
+    }
+    #item5 {
+        display: none;
+    }
+    #item6 {
+        display: none;
+    }
+    #item7 {
+        order: 4;
+    }
+    #item8 {
+        order: 5;
+    }
+    #item9 {
+        order: 6;
+    }
+    #item10 {
+        order: 7;
+    }
+    #item11 {
+        order: 8;
+    }
+    #item12 {
+        order: 9;
+    }
+    #item13 {
+        order: 10;
+    }
+    .main_footer_project_nav {
+        margin-top: 20px;
+    }
+    .main_footer_adr {
+        margin-top: 20px;
+        display: inline-block;
+    }
+    .main_footer_contacts {
+        margin-top: 20px;
+        display: inline-block;
+    }
+}
